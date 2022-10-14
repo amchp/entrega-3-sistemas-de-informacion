@@ -1,0 +1,1 @@
+TIPO DE DOCUMENTO USUARIO & "," & No DE AFILIACION & "," & CODIGO ASEGURADORA & "," & "5" & "," & Substitute ( NOMBRE ; ", " ; "," ) & If ( PatternCount ( NOMBRE ; "," ) > 2 ; "" ; Left ( ",,,"; (3 -PatternCount ( NOMBRE ; "," )) )) & "," & EDAD RIPS & "," & "1" & "," & GENERO & "," & "05" & "," & If ( CODIGO MUNICIPIO ≠ "" ; CODIGO MUNICIPIO; "001" ) & "," & "U"

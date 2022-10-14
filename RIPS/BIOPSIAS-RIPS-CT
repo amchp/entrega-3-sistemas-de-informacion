@@ -1,0 +1,24 @@
+"050011119503," & $LastDateMonth & "," & "AP" & Month ( BDPatologia::FECHA DE INGRESO ) & Year ( BDPatologia::FECHA DE INGRESO ) & "," & $CUENTA
+
+& 
+
+¶
+
+&
+
+"050011119503," & $LastDateMonth & "," & "AF" & Month ( BDPatologia::FECHA DE INGRESO) & Year ( BDPatologia::FECHA DE INGRESO ) & "," & $CUENTA
+
+& 
+
+¶ 
+
+&
+
+"050011119503," & $LastDateMonth & "," & "US" & Month ( BDPatologia::FECHA DE INGRESO ) & Year ( BDPatologia::FECHA DE INGRESO ) & "," & $CUENTA
+
+& 
+
+¶
+
+&
+"050011119503," & $LastDateMonth & "," & "AC" & Month ( BDPatologia::FECHA DE INGRESO ) & Year ( BDPatologia::FECHA DE INGRESO ) & "," & $CUENTA

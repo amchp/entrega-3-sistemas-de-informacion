@@ -1,0 +1,24 @@
+"050011119503," & $LastDateMonth & "," & "AP" & Month ( BD_CitologiaMaestro::FECHA DE INGRESO ) & Year ( BD_CitologiaMaestro::FECHA DE INGRESO ) & "," & $CUENTA
+
+& 
+
+¶
+
+&
+
+"050011119503," & $LastDateMonth & "," & "AF" & Month ( BD_CitologiaMaestro::FECHA DE INGRESO) & Year ( BD_CitologiaMaestro::FECHA DE INGRESO ) & "," & $CUENTA
+
+& 
+
+¶ 
+
+&
+
+"050011119503," & $LastDateMonth & "," & "US" & Month ( BD_CitologiaMaestro::FECHA DE INGRESO ) & Year ( BD_CitologiaMaestro::FECHA DE INGRESO ) & "," & $CUENTA
+
+& 
+
+¶
+
+&
+"050011119503," & $LastDateMonth & "," & "AC" & Month ( BD_CitologiaMaestro::FECHA DE INGRESO ) & Year ( BD_CitologiaMaestro::FECHA DE INGRESO ) & "," & $CUENTA

@@ -1,0 +1,1 @@
+NUMERO DE FACTURA & "," & "050011119503" & "," & TIPO DE DOCUMENTO USUARIO & "," & No DE AFILIACION & "," & FECHA DE INGRESO & "," & AUTORIZACION & "," & Substitute ( CODIGO DEL PROCEDIMIENTO CUPS ; " " ; "" ) & ",1," & "1" & "," & "1" & "," & CIE 10 &",,,," & VALOR BRUTO

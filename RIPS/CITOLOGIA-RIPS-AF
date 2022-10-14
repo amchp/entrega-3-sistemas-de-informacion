@@ -1,0 +1,13 @@
+"050011119503,UNIDAD DE CITOLOGIA Y PATOLOGIA IPS S.A.S,NI,900313017,"&  BD_CitologiaMaestro::NUMERO DE FACTURA & 
+","& If ( Day ( BD_CitologiaMaestro::FECHA FINAL DE LA FACTURACION ) < 10 ; "0"& Day ( BD_CitologiaMaestro::FECHA FINAL DE LA FACTURACION ) ; Day ( BD_CitologiaMaestro::FECHA FINAL DE LA FACTURACION ) ) & "/" & If ( Month ( BD_CitologiaMaestro::FECHA FINAL DE LA FACTURACION ) < 10 ; "0"& Month ( BD_CitologiaMaestro::FECHA FINAL DE LA FACTURACION ) ; Month ( BD_CitologiaMaestro::FECHA FINAL DE LA FACTURACION ) ) & "/"  & Year ( BD_CitologiaMaestro::FECHA FINAL DE LA FACTURACION ) & 
+"," & "01/" &
+If ( Month ( BD_CitologiaMaestro::FECHA FINAL DE LA FACTURACION ) < 10 ; "0" & Month ( BD_CitologiaMaestro::FECHA DE INGRESO ); Month ( BD_CitologiaMaestro::FECHA DE INGRESO ) ) & "/" & Year ( BD_CitologiaMaestro::FECHA DE INGRESO ) &
+"," & 
+Day ( Date( Month ( BD_CitologiaMaestro::FECHA DE INGRESO ); 1; Year ( BD_CitologiaMaestro::FECHA DE INGRESO )) - 1 ) &  
+"/" & If ( Month ( BD_CitologiaMaestro::INGRESO ) < 10 ; "0" & Month ( BD_CitologiaMaestro::FECHA DE INGRESO ); Month ( BD_CitologiaMaestro::FECHA DE INGRESO ) ) &  
+"/" & Year ( BD_CitologiaMaestro::FECHA DE INGRESO ) & 
+"," & BD_CitologiaMaestro::CODIGO ASEGURADORA &
+","& If ( BD_CitologiaMaestro::ASEGURADORA = "COOMEVA MEDICINA PREPAGADA" ; "COOMEVA MEDICINA PREPAGADA" ; BD_CitologiaMaestro::ASEGURADORA ) & ",,ASEGURADORA," 
+&  BD_CitologiaMaestro::POLIZA &
+","& If ( not IsEmpty ( BDPatologia::VALOR EFECTIVO O COOPAGO ) ; BDPatologia::VALOR EFECTIVO O COOPAGO ; 0 ) &
+",0,0," & BD_CitologiaMaestro::VALOR NETO

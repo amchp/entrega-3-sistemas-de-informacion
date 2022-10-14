@@ -1,0 +1,9 @@
+"050011119503,UNIDAD DE CITOLOGIA Y PATOLOGIA IPS S.A.S,NI,900313017,"& BDPatologia::NUMERO DE FACTURA &
+","& BDPatologia::FECHA DE FACTURACION & ",01/"  &
+If ( Month ( BDPatologia::FECHA DE INGRESO ) < 10 ; "0" & Month ( BDPatologia::FECHA DE INGRESO ); Month ( BDPatologia::FECHA DE INGRESO ) ) & "/"  & Year ( BDPatologia::FECHA DE INGRESO ) &
+"," & 
+Day ( Date( Month ( BDPatologia::FECHA DE INGRESO ); 1; Year ( BDPatologia::FECHA DE INGRESO )) - 1 ) &  
+"/" & If ( Month ( BDPatologia::FECHA DE INGRESO ) < 10 ; "0" & Month ( BDPatologia::FECHA DE INGRESO ); Month ( BDPatologia::FECHA DE INGRESO ) ) &  
+"/" & Year ( BDPatologia::FECHA DE INGRESO ) &
+"," & BDPatologia::CODIGO ASEGURADORA &
+"," & BDPatologia::ASEGURADORA & ",,,,,,," & BDPatologia::VALOR NETO
